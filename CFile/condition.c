@@ -5,8 +5,6 @@ int main(void){
     float factor;
     printf("Entrez un nombre mystere different de 0 et positif ");
     scanf("%f", &number);
-    printf("Entrez un facteur ");
-    scanf("%f", &factor);
     if (number == 0){
         printf("Le nombre mystere %.3f est null", number);
         return 1;
@@ -17,12 +15,12 @@ int main(void){
     
     if (number > 0){
         printf("Le nombre mystere %.3f est positif", number);
-    }else if (number > 0){
+    }else if (number < 0){
         printf("Le nombre mystere %.3f est negatif", number);
         return 1;
     }
-    
-    
+    printf("Entrez un facteur ");
+    scanf("%f", &factor);
     printf("Test du Nombre mystere : Egalite %d\n", factor == number);
     printf("Test du Nombre mystere : Nullite %d\n", factor != number);
     printf("Test du Nombre mystere : Plus petit %d\n", factor > number);
