@@ -11,8 +11,7 @@ int main(void){
     }
     else if (number != 0 && number > 0){
         printf("Le nombre mystere %.3f remplit les condition de test", number);
-    }
-    
+    } 
     if (number > 0){
         printf("Le nombre mystere %.3f est positif", number);
     }else if (number < 0){
